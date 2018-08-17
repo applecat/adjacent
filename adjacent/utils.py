@@ -3,6 +3,7 @@ import time
 from django.conf import settings
 from cent.core import generate_token
 
+
 # In django.VERSION >= (1, 10) user.is_authenticated is not callable anymore
 def is_authenticated(user):
     if callable(user.is_authenticated):
